@@ -1,0 +1,12 @@
+2021-05-07 15:08:01,975 DEBUG    root            Loaded Command Group: ['gcloud', 'secrets']
+2021-05-07 15:08:01,977 DEBUG    root            Loaded Command Group: ['gcloud', 'secrets', 'versions']
+2021-05-07 15:08:01,980 DEBUG    root            Loaded Command Group: ['gcloud', 'secrets', 'versions', 'access']
+2021-05-07 15:08:01,987 DEBUG    root            Running [gcloud.secrets.versions.access] with arguments: [--secret: "windows-password", VERSION: "1"]
+2021-05-07 15:08:02,018 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): secretmanager.googleapis.com:443
+2021-05-07 15:08:02,084 DEBUG    urllib3.connectionpool https://secretmanager.googleapis.com:443 "GET /v1/projects/asnbile/secrets/windows-password/versions/1:access?alt=json HTTP/1.1" 200 None
+2021-05-07 15:08:02,087 INFO     root            Display format: "
+value[terminator="",private](
+  payload.data.decode(base64).decode(utf8)
+)
+"
+2021-05-07 15:08:02,151 DEBUG    root            SDK update checks are disabled.

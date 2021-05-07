@@ -1,0 +1,15 @@
+2021-05-07 14:43:41,648 DEBUG    root            Loaded Command Group: ['gcloud', 'secrets']
+2021-05-07 14:43:41,652 DEBUG    root            Loaded Command Group: ['gcloud', 'secrets', 'versions']
+2021-05-07 14:43:41,666 DEBUG    root            Loaded Command Group: ['gcloud', 'secrets', 'versions', 'access']
+2021-05-07 14:43:41,677 DEBUG    root            Running [gcloud.secrets.versions.access] with arguments: [--secret: "windows-password", VERSION: "1"]
+2021-05-07 14:43:41,715 DEBUG    google.auth.transport.requests Making request: POST https://oauth2.googleapis.com/token
+2021-05-07 14:43:41,718 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): oauth2.googleapis.com:443
+2021-05-07 14:43:41,762 DEBUG    urllib3.connectionpool https://oauth2.googleapis.com:443 "POST /token HTTP/1.1" 200 None
+2021-05-07 14:43:41,782 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): secretmanager.googleapis.com:443
+2021-05-07 14:43:41,855 DEBUG    urllib3.connectionpool https://secretmanager.googleapis.com:443 "GET /v1/projects/asnbile/secrets/windows-password/versions/1:access?alt=json HTTP/1.1" 200 None
+2021-05-07 14:43:41,857 INFO     root            Display format: "
+value[terminator="",private](
+  payload.data.decode(base64).decode(utf8)
+)
+"
+2021-05-07 14:43:41,948 DEBUG    root            SDK update checks are disabled.
